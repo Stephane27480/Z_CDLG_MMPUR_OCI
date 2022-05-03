@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+    <LANGU>F</LANGU>
+    <DESCRIPT>Create PO from PO</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>CREATE_PO</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Create PO for PR Items</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>GET_DUMMY_PACKNO</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Get dummy package number for PO create process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>GET_PO_NUMBER</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Get the PO number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>GET_PR_DETAIL</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Get the detail of the PR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>GT_ITEMS_PER_VENDOR</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Demande d&apos;achat par fournisseur (poste)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>GV_BANFN</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Numéro de la demande d&apos;achat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>GV_CREATOR</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Nom de l&apos;utilisateur qui a créé l&apos;objet</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>MAP_PR_2_BAPI</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Map the data from the BAPI to the PO</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>MO_CONST</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Constants Purchasing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MMPUR_OCI_PR_TO_PO</CLSNAME>
+     <CMPNAME>MV_PACKNO</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Numéro de lot</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
