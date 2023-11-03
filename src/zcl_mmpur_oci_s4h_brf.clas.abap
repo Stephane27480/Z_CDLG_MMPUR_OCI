@@ -15,6 +15,18 @@ private section.
       !IV_CAT_ID type MM_OCI_WEB_SERVICE_ID
     changing
       !CS_OCI_ITEM type MMPUR_OCI_CAT_RETURN_TYPE .
+   class-methods GET_MATKL_FROM_CONTR
+    importing
+      !IV_EBELN type EBELN
+      !IV_EBELP type EBELP
+    returning
+      value(RV_MATKL) type MATKL .
+  class-methods GET_MATNR_FROM_CONTRACTITEM
+    importing
+      !IV_EBELN type EBELN
+      !IV_EBELP type EBELP
+    returning
+      value(RV_MATNR) type MATNR .
 ENDCLASS.
 
 
@@ -124,4 +136,26 @@ CONSTANTS:lv_function_id TYPE if_fdt_types=>id VALUE '005056B2ACCD1ED88DA086242E
     ct_punchout_items = lt_items .
 
   ENDMETHOD.
+
+
+  method GET_MATKL_FROM_CONTR.
+
+    SELECT SINGLE MATKL
+        INTO RV_MATKL
+        FROM EKPO
+        WHERE EBELN = IV_EBELN
+        AND EBELP =   IV_EBELP
+      .
+  endmethod.
+
+
+  method GET_MATNR_FROM_CONTRACTITEM.
+
+    SELECT SINGLE MATNR
+        INTO RV_MATNR
+        FROM EKPO
+        WHERE EBELN = IV_EBELN
+        AND EBELP =   IV_EBELP
+      .
+  endmethod.
 ENDCLASS.
